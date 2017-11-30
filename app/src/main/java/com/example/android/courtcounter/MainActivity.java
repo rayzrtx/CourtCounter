@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ * This activity keeps track of the basketball score for 2 teams.
+ */
 public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;
@@ -32,36 +35,56 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    /**
+     * Increase the score for Team A by 3 points.
+     */
     public void addThreePointsTeamA(View view) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
 
+    /**
+     * Increase the score for Team B by 3 points.
+     */
     public void addThreePointsTeamB(View view) {
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Increase the score for Team A by 2 points.
+     */
     public void addTwoPointsTeamA(View view) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
 
+    /**
+     * Increase the score for Team B by 2 points.
+     */
     public void addTwoPointsTeamB(View view) {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Increase the score for Team A by 1 point.
+     */
     public void addOnePointTeamA(View view) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
-
+    /**
+     * Increase the score for Team B by 1 point.
+     */
     public void addOnePointTeamB(View view) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Resets the score for both teams back to 0.
+     */
     public void resetToZero(View view) {
         scoreTeamA = 0;
         scoreTeamB = 0;
